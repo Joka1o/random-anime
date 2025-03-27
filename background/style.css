@@ -1,0 +1,72 @@
+body{
+    background: rgb(84,0,141);
+    background: linear-gradient(90deg, rgba(84,0,141,1) 0%, rgba(77,0,117,1) 50%, rgba(88,0,94,1) 100%);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.back{
+    width: 480px;
+    height: 650px;
+    background-color: rgb(29, 0, 56);
+    background-position: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 150px auto;
+    position: relative;
+}
+
+button{
+    position: absolute;
+    bottom: 20px;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    padding: 28px 100px;
+    width: 62%;
+    margin: 40px 85px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.372);
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease
+    
+}
+
+button:hover {
+    background-color: rgba(255, 0, 127, 0.7); /* Новий колір */
+    color: black; /* Зміна кольору тексту */
+}
+
+
+.text-container{
+    color: aliceblue;
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+    
+}
+
+#character-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.link{
+    position: absolute;
+    bottom: 20px;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    padding: 18px 100px;
+    width: 62%;
+    margin: 150px 85px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.372);
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease
+}
