@@ -1,11 +1,11 @@
+//Масив цитат
 const quotes = [
     "«Це просто жалюгідно відмовлятися від чогось, навіть не спробувавши». – Рейко Мікамі",
     "«Знання, що ти інший, це лише початок...» – Міс Кобаяші",
     "«Ви можете померти будь-коли, але для життя потрібна справжня мужність». – Кеншин Хімура",
     "«Кожна подорож починається з одного кроку...» – Міллі Томпсон"
 ];
-
-// Відповідні зображення та посилання
+//Обєкт із даними персонажів
 const characterData = {
     0: {
         img: "https://cdn.hikka.io/content/characters/reiko-mikami-a1c918/Eci52_PAyMur1Q1wN0hPkA.jpg",
@@ -22,9 +22,9 @@ const characterData = {
     3: {
         img: "https://nyaa.shikimori.one/system/user_images_h/original/8e09f3c7a3afb778b6216e78/e7ebef2e4465ae70d7fc76fca060b729b2a2a9491d7854bfe216fb53849131b0.jpg",
         link: "https://anitube.in.ua/42-trigan.html"
-    }
+    },
 };
-
+//Вибір раномних цитат та зображень
 let currentIndex = 0;
 
 function showRandomQuote() {
@@ -34,7 +34,15 @@ function showRandomQuote() {
     let imgElement = document.getElementById("character-image");
     imgElement.src = characterData[currentIndex].img;
 }
-
+//Відкриття посилання на аніме
 function openCharacterLink() {
     window.open(characterData[currentIndex].link, "_blank");
 }
+
+/*
+1.Відкрийте index.html у браузері.
+
+2.Натисніть кнопку "Рандом", щоб отримати випадкову цитату та зображення.
+
+3.З'явиться кнопка "Посилання" – натисніть її, щоб перейти на сайт аніме.
+*/
